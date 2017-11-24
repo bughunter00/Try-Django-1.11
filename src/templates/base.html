@@ -3,22 +3,12 @@
   <head></head>
     <body>
       <h1>Muypicku.com</h1>
-      <h1> Hello</h1>
-      <p>this is html {{ html_var }}</p>
-      {% if num is not None %}
-      <p>Random number is: {{ num }}</p>
-      {% endif %}
-
-      <p>
-      {% for some_item in some_list %}
-      	{% if some_item|divisibleby:"2" %}
-      	Even number
-      	{% endif %}
-          {{ some_item }}<br />
-      	
-          
-      {% endfor %}
-      </p>
-      <p>Some item is: {{ some_item }}</p>
+        <a href="/">Home</a>
+        <a href="/home2/">Home 2</a>
+        <a href="/home3/">Home 3</a>
+      <div class="container">
+      {% block content %}
+      {% endblock content %}
+      </div>
     </body>
 </html>
